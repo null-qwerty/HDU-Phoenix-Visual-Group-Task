@@ -29,7 +29,7 @@ void GammaCorrection(Mat &src, Mat &OutputImg, double gamma = 2.2)
             data[j] = pow(data[j] / 255.0, 1.0 / gamma) * 255; //先将颜色数值从0~255映射到0~1,公式转换完成后转回0~255
     }
 }
-int main()
+int main(int argc, char *argv[], char **env)
 {
     Mat img1 = imread(OPENFILENAME1,0); //以灰度图读入
     Mat img2 = imread(OPENFILENAME2, 0);
