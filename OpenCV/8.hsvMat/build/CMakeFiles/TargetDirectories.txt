@@ -1,3 +1,0 @@
-/home/chenhy/桌面/RM/2023视觉组寒假任务/HDU-Phoenix-Visual-Group-Task/OpenCV/8.hsvMat/build/CMakeFiles/rebuild_cache.dir
-/home/chenhy/桌面/RM/2023视觉组寒假任务/HDU-Phoenix-Visual-Group-Task/OpenCV/8.hsvMat/build/CMakeFiles/edit_cache.dir
-/home/chenhy/桌面/RM/2023视觉组寒假任务/HDU-Phoenix-Visual-Group-Task/OpenCV/8.hsvMat/build/CMakeFiles/hsvMat.dir
