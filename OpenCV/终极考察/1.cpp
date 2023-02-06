@@ -16,7 +16,7 @@ int main(int argc, char *argv[], char **env)
 
     cvtColor(srcImg, gray, COLOR_BGR2GRAY);
     threshold(gray, binary, 0, 255, THRESH_OTSU); // 自动设置阈值
-                                                  //    imshow("binary", binary);
+    //imshow("binary", binary);
 
     vector<vector<Point>> contours;                               // 连通区域轮廓点集
     findContours(binary, contours, RETR_LIST, CHAIN_APPROX_NONE); // 找连通区域,获取全部轮廓的全部像素

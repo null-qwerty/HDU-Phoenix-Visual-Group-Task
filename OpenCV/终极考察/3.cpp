@@ -17,7 +17,7 @@ int main(int argc,char* argv[],char** env)
     cvtColor(srcImg, srcImg, COLOR_BGR2HSV); // BGR无法区分,转成HSV
     split(srcImg, channel);
 
-    // for (int i = 0; i < 3; i++) // 1,2,3对应HSV,S区分明显
+    // for (int i = 0; i < 3; i++) // 0,1,2对应HSV,S区分明显
     //     imshow(format("%d", i), channel[i]);
     Mat s = channel[1];
     Mat binary;
