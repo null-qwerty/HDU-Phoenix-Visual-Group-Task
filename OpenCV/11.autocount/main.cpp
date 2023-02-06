@@ -19,7 +19,6 @@ int main(int argc, char *argv[], char **env)
 
     threshold(srcImg, trans, 100, 255, 1); // 类型为1,二值化后取反
     cvtColor(trans, trans, COLOR_BGR2GRAY);
-    for (int i = 0; i < trans.rows; i++)
     imshow("二值化", trans);
 
     int number;
