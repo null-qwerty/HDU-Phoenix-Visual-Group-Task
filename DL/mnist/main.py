@@ -26,7 +26,6 @@ def get_dataloader(train, batch_size=BATCH_SIZE):
     data_loader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
     return data_loader
 
-
 class MnistModel(nn.Module):
     def __init__(self):
         super(MnistModel, self).__init__()  # 继承
@@ -44,13 +43,11 @@ class MnistModel(nn.Module):
         out = self.fc2(x)
         return F.log_softmax(out, dim=-1)
 
-
 model = MnistModel()
 optimizer = Adam(model.parameters(), lr=0.001)
 if os.path.exists("./DL/mnist/model/mnist_net.pth"): #读取训练的模型
         model.load_state_dict(torch.load("./DL/mnist/model/mnist_net.pth"))
         optimizer.load_state_dict(torch.load("./DL/mnist/model/mnist_optimizer.pth"))
-
 
 def train(epoch):  # epoch表示几轮
     data_loader = get_dataloader(True)  # 获取数据加载器
@@ -82,7 +79,6 @@ def test():
             cur_acc = pred.eq(target).float().mean()
             acc_list.append(cur_acc)
     print("平均准确率：", np.mean(acc_list), "平均损失：", np.mean(loss_list))
-
 
 test()
 for i in range(3):  # 训练三轮

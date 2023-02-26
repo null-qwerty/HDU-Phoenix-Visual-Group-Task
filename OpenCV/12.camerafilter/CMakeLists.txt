@@ -1,7 +1,7 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.16)
 
 set(CMAKE_CXX_STANDARD 11)
-set(OpenCV_DIR /usr/local/bin/cmake/opencv4)
+set(OpenCV_DIR /usr/local/lib/cmake/opencv4)
 
 find_package(OpenCV REQUIRED)
 
