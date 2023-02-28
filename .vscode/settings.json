@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "${workspaceFolder}/OpenCV/7.gammacorrection"
+    "cmake.sourceDirectory": "${workspaceFolder}/OpenCV/7.gammacorrection",
+    "ros.distro": "noetic"
 }
