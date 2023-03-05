@@ -1,0 +1,6 @@
+因GTX16系显卡CUDA问题修改的文件：
+yolov5/train.py
+133行
+226行
+yolov5/val.py
+120行
